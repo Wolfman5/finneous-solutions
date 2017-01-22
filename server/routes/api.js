@@ -20,6 +20,20 @@ router.get('/posts', (req, res) => {
     });
 });
 
+router.get('/homeCards', (req, res) => {
+  const cards = [
+    {
+      title: 'Cutest Puppy - Finley',
+      imgUrl: '/assets/img/finleyPark.jpg'
+    },    
+    {
+      title: 'Asheville: The Princess and the Pup',
+      imgUrl: '/assets/img/Asheville.jpg'
+    }
+  ]
+  res.send(cards);
+});
+
 
 
 module.exports = router;
